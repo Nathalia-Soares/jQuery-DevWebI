@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Página 15</title>
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <p>Presione o mouse aqui.
+        Ao clicar MOUSE DOWN, aparecerá em sua tela.
+        Ao soltar, MOUSE UP fará o mesmo.
+    </p>
+
+    <script>
+        $("p")
+            .mouseup(function() {
+                $(this).append("<span style='color:#f00;'>Mouse up.</span>");
+            })
+            .mousedown(function() {
+                $(this).append("<span style='color:#00f;'>Mouse down.</span>");
+            });
+    </script>
+</body>
+</html>

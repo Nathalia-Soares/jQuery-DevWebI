@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Página 10</title>
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+    <p>
+        <button>Animar</button>
+    </p>
+    <div class="primeiro"></div>
+    <div class="segundo"></div>
+
+    <script>
+        $("button").click(function() {
+            $("div.primeiro").slideUp(300).delay(1000).fadeIn(400);
+            $("div.segundo").slideUp(300).fadeIn(2000);
+        });
+    </script>
+</body>
+</html>
